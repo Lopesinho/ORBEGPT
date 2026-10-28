@@ -1,0 +1,398 @@
+/* Página "Sobre Nós". Usa as bases do Home.css (fonte, navbar, botão e rodapé). */
+
+/* ===== Navbar: página atual ===== */
+
+.nav-link-active .nav-link-text {
+    color: #E0B868;
+}
+
+.navbar {
+    margin: 0;
+}
+
+/* Navbar translúcida: a foto da abertura continua por trás dela */
+.container-fluid {
+    background-color: rgba(227, 84, 107, 0.82);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+}
+
+
+/* ===== Títulos comuns ===== */
+
+.sn-title {
+    margin: 0 0 20px;
+
+    font-size: 36px;
+    font-weight: 800;
+    color: #E3546B;
+}
+
+.sn-title-center {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sn-title-light {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.sn-text {
+    margin: 0 0 18px;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.7;
+    max-width: 62ch;
+}
+
+.sn-hero {
+    min-height: 100vh;
+    padding: calc(max(12vh, 85px) + 40px) 9vw 80px;
+
+    display: flex;
+    align-items: center;
+    background-color: #E3546B;
+    background-image:
+        linear-gradient(90deg,
+            rgba(227, 84, 107, 0.92) 0%,
+            rgba(227, 84, 107, 0.78) 45%,
+            rgba(227, 84, 107, 0.30) 100%),
+            url("./Assets/sobre-nos.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sn-hero-text {
+    max-width: 560px;
+}
+
+.sn-hero-title {
+    margin: 0;
+
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 1.05;
+    color: white;
+}
+
+.sn-hero-subtitle {
+    margin: 20px 0 35px;
+
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
+
+.sn-hero .button-header {
+    margin-left: 0;
+    text-decoration: none;
+}
+
+
+.sn-story {
+    padding: 100px 9vw;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 70px;
+    align-items: center;
+
+    background-color: #FFF9F5;
+}
+
+.sn-quote {
+    margin: 0;
+    padding: 40px 36px;
+
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #E3546B;
+
+    background-color: white;
+    border: 1px solid #e99c54;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(90, 69, 64, 0.12);
+}
+
+.sn-quote-footer {
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-weight: 500;
+    color: #5A4540;
+}
+
+
+.sn-values {
+    padding: 90px 9vw;
+    background-color: #FDEEDF;
+}
+
+.sn-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.sn-value {
+    padding: 36px 30px;
+
+    background-color: #FFF9F5;
+    border: 1px solid #e99c54;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(90, 69, 64, 0.12);
+}
+
+.sn-value h3 {
+    margin: 22px 0 10px;
+
+    font-size: 1.4rem;
+    color: #E3546B;
+}
+
+.sn-value p {
+    margin: 0;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.sn-bullet {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.sn-bullet-pink   { background-color: #E3546B; }
+.sn-bullet-gold   { background-color: #E0B868; }
+.sn-bullet-orange { background-color: #e99c54; }
+
+
+.sn-characters {
+    padding: 90px 9vw 0;
+    background-color: #E3546B;
+}
+
+.sn-characters-subtitle {
+    margin: 0 0 40px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.sn-characters-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: end;
+}
+
+.sn-character {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 20px;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.sn-character-img {
+    width: 45%;
+    max-height: 340px;
+
+    object-fit: contain;
+    object-position: bottom;
+    transform-origin: bottom center;
+
+    transition: transform 0.3s ease;
+}
+
+.sn-character:hover .sn-character-img {
+    transform: scale(1.06);
+}
+
+.sn-character-card {
+    width: 50%;
+    margin-bottom: 60px;
+    padding: 22px 20px;
+
+    text-align: center;
+
+    background-color: #FFF9F5;
+    border: 3px solid #e99c54;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(90, 69, 64, 0.12);
+}
+
+.sn-character-card h3 {
+    margin: 0 0 6px;
+
+    font-size: 1.5rem;
+    color: #E3546B;
+}
+
+.sn-character-card p {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.sn-team {
+    padding: 90px 9vw;
+    background-color: #FFF9F5;
+}
+
+.sn-team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 30px;
+}
+
+.sn-member {
+    text-align: center;
+}
+
+.sn-member h3 {
+    margin: 18px 0 4px;
+
+    font-size: 1.15rem;
+    color: #5A4540;
+}
+
+.sn-member p {
+    margin: 0;
+
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.sn-avatar {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 38px;
+    font-weight: 800;
+    color: #E3546B;
+
+    object-fit: cover;
+    background-color: #FFF9F5;
+    border: 3px solid #E0B868;
+    border-radius: 50%;
+}
+
+.sn-cta {
+    padding: 90px 9vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: #E3546B;
+}
+
+.sn-cta-title {
+    margin: 0;
+
+    font-size: 36px;
+    font-weight: 800;
+    color: white;
+}
+
+.sn-cta-text {
+    margin: 12px 0 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.sn-cta .button-header {
+    margin-left: 0;
+    text-decoration: none;
+}
+
+.sn-hero a:focus-visible,
+.sn-cta a:focus-visible,
+.sn-character:focus-visible,
+.nav-link:focus-visible {
+    outline: 3px solid #FFF9F5;
+    outline-offset: 4px;
+}
+
+
+@media (max-width: 900px) {
+    .sn-hero {
+        background-image:
+            linear-gradient(rgba(227, 84, 107, 0.82), rgba(227, 84, 107, 0.82)),
+            url("./Assets/sobreNos.png");
+    }
+
+    .sn-hero-title {
+        font-size: 48px;
+    }
+
+    .sn-hero-subtitle {
+        font-size: 20px;
+    }
+
+    .sn-story,
+    .sn-characters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sn-story {
+        gap: 40px;
+        padding: 70px 6vw;
+    }
+
+    .sn-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sn-values,
+    .sn-team,
+    .sn-partners,
+    .sn-cta {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .sn-characters {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-nav {
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .sn-title {
+        font-size: 28px;
+    }
+
+    .sn-character-img {
+        width: 40%;
+    }
+
+    .sn-character-card {
+        margin-bottom: 30px;
+    }
+}

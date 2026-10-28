@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Orbe</title>
+    <link rel="stylesheet" href="Catalogo.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    
+<!-- HEADER IGUAL AO DA HOME -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+
+        <a href="index.html">
+            <img
+                class="navbar-brand"
+                src="./Assets/White.svg"
+                alt="Logo Orbe"
+            >
+        </a>
+
+        <button
+            class="menu-toggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="tentando-colocar-na-direita">
+            <div class="navbar-nav">
+                <a class="nav-link" href="./Catalogo.html">
+                    <p class="nav-link-text">Catálogo</p>
+                </a>
+
+                <a class="nav-link" href="./Sobre.html">
+                    <p class="nav-link-text">Sobre Nós</p>
+                </a>
+
+                <a class="nav-link" href="./Contato.html">
+                    <p class="nav-link-text">Contato</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="catalogo">
+
+        <!-- COLEÇÕES TRADICIONAIS -->
+        <section class="catalogo-secao" id="tradicionais">
+            <div class="secao-cabecalho">
+                <div>
+                    <h2>Materiais Tradicionais</h2>
+                </div>
+                <span class="secao-contador">03 coleções</span>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- RISE UP -->
+                <article class="card-colecao card-rise">
+                    <div class="card-topo">
+                        <span class="card-indice">01</span>
+                        <span class="card-nivel">A1/A2</span>
+                        <div class="card-circulo">
+                            <span class="card-simbolo">✦</span>
+                        </div>
+                    </div>
+
+                    <div class="card-corpo">
+                        <h3>RISE UP</h3>
+                        <p>
+                            Uma coleção para construir uma base sólida no inglês
+                            desde os primeiros contatos com o idioma. Trabalhe
+                            vocabulário, gramática e comunicação por meio de
+                            situações práticas e próximas da realidade dos alunos.
+                        </p>
+
+                        <div class="card-rodape">
+                            <span class="card-disponibilidade">
+                                3 Livros disponíveis
+                            </span>
+                            <button class="card-botao" data-abrir="modal-rise">
+                                Acessar coleção <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- EXPLORER -->
+                <article class="card-colecao card-explorer">
+                    <div class="card-topo">
+                        <span class="card-indice">02</span>
+                        <span class="card-nivel">B1/B2</span>
+                        <div class="card-circulo">
+                            <span class="card-simbolo">◈</span>
+                        </div>
+                    </div>
+
+                    <div class="card-corpo">
+                        <h3>EXPLORER</h3>
+                        <p>
+                            Uma coleção para alunos que já possuem uma base
+                            e estão prontos para avançar. Desenvolva fluência,
+                            amplie o repertório e estimule a comunicação em
+                            situações mais diversas e desafiadoras.
+                        </p>
+
+                        <div class="card-rodape">
+                            <span class="card-disponibilidade">
+                                3 Livros disponíveis
+                            </span>
+                            <button class="card-botao" data-abrir="modal-explorer">
+                                Acessar coleção <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- EXPRESS -->
+                <article class="card-colecao card-express">
+                    <div class="card-topo">
+                        <span class="card-indice">03</span>
+                        <span class="card-nivel">C1/C2</span>
+                        <div class="card-circulo">
+                            <img src="./Assets/Lua.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-corpo">
+                        <h3>EXPRESS</h3>
+                        <p>
+                            Uma coleção para alunos que buscam maior domínio
+                            e naturalidade no inglês. Aprofunde estruturas,
+                            vocabulário e comunicação, trabalhando ideias
+                            complexas e diferentes contextos de uso do idioma.
+                        </p>
+
+                        <div class="card-rodape">
+                            <span class="card-disponibilidade">
+                                3 Livros disponíveis
+                            </span>
+                            <button class="card-botao" data-abrir="modal-express">
+                                Acessar coleção <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- COLEÇÕES DE CONVERSAÇÃO -->
+        <section class="catalogo-secao" id="conversacao">
+            <div class="secao-cabecalho">
+                <div>
+                    <h2>Materiais de Conversação</h2>
+                </div>
+                <span class="secao-contador">03 coleções</span>
+            </div>
+
+            <div class="cards-grid">
+
+                <!-- SPEAK UP -->
+                <article class="card-colecao card-speak">
+                    <div class="card-topo">
+                        <span class="card-indice">01</span>
+                        <span class="card-nivel">A1/A2</span>
+                        <div class="card-circulo">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="9" y="2" width="6" height="13" rx="3"/>
+                                <path d="M5 10v2a7 7 0 0 0 14 0v-2"/>
+                                <path d="M12 19v3M8 22h8"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card-corpo">
+                        <h3>SPEAK UP</h3>
+                        <p>
+                            Uma coleção para perder o medo de falar desde o início.
+                            Pratique diálogos curtos, perguntas e respostas do
+                            dia a dia, com apoio de imagens, jogos e atividades
+                            em dupla.
+                        </p>
+
+                        <div class="card-rodape">
+                            <span class="card-disponibilidade">
+                                3 Livros disponíveis
+                            </span>
+                            <button class="card-botao" data-abrir="modal-speak">
+                                Acessar coleção <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- CONNECT -->
+                <article class="card-colecao card-connect">
+                    <div class="card-topo">
+                        <span class="card-indice">02</span>
+                        <span class="card-nivel">B1/B2</span>
+                        <div class="card-circulo">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5
+                                         8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7
+                                         a8.4 8.4 0 0 1-.9-3.8A8.5 8.5
+                                         0 0 1 12.5 3H13a8.5 8.5
+                                         0 0 1 8 8z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card-corpo">
+                        <h3>CONNECT</h3>
+                        <p>
+                            Uma coleção para quem já se comunica e quer ganhar
+                            confiança. Participe de conversas guiadas, conte
+                            experiências e troque opiniões em situações
+                            cada vez mais variadas.
+                        </p>
+
+                        <div class="card-rodape">
+                            <span class="card-disponibilidade">
+                                3 Livros disponíveis
+                            </span>
+                            <button class="card-botao" data-abrir="modal-connect">
+                                Acessar coleção <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- DEBATE -->
+                <article class="card-colecao card-debate">
+                    <div class="card-topo">
+                        <span class="card-indice">03</span>
+                        <span class="card-nivel">C1/C2</span>
+                        <div class="card-circulo">
+                            <svg viewBox="0 0 24 24" fill="none"
+                                 stroke="currentColor" stroke-width="2"
+                                 stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5
+                                         a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="card-corpo">
+                        <h3>DEBATE</h3>
+                        <p>
+                            Uma coleção para conversar com naturalidade e
+                            defender ideias. Trabalhe argumentação, fluência
+                            e expressões do cotidiano em discussões
+                            e apresentações de verdade.
+                        </p>
+
+                        <div class="card-rodape">
+                            <span class="card-disponibilidade">
+                                3 Livros disponíveis
+                            </span>
+                            <button class="card-botao" data-abrir="modal-debate">
+                                Acessar coleção <span>↗</span>
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAIS DOS LIVROS -->
+    <dialog class="modal-livro card-rise" id="modal-rise" aria-labelledby="titulo-rise">
+        <button class="modal-fechar" data-fechar aria-label="Fechar">×</button>
+        <div class="modal-corpo">
+            <div class="modal-imagem">
+                <img src="./Assets/rise-up.png" alt="Livro Rise Up">
+            </div>
+            <div class="modal-info">
+                <span class="modal-etiqueta">MATERIAL TRADICIONAL</span>
+                <h2 id="titulo-rise">Livro Didático - Rise Up</h2>
+                <p class="modal-marca">ORBE · A1/A2</p>
+                <hr>
+                <p class="modal-preco"><strong>R$ 99,99</strong> à vista</p>
+                <p class="modal-antigo"><s>R$ 119,99</s> <span>16%</span></p>
+                <p class="modal-descricao">
+                    Uma coleção para construir uma base sólida no inglês desde
+                    os primeiros contatos com o idioma. Trabalhe vocabulário,
+                    gramática e comunicação por meio de situações práticas
+                    e próximas da realidade dos alunos.
+                </p>
+                <a href="#" class="modal-comprar">Compre ou assine!</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-livro card-explorer" id="modal-explorer" aria-labelledby="titulo-explorer">
+        <button class="modal-fechar" data-fechar aria-label="Fechar">×</button>
+        <div class="modal-corpo">
+            <div class="modal-imagem">
+                <div class="modal-placeholder">Imagem do livro Explorer</div>
+            </div>
+            <div class="modal-info">
+                <span class="modal-etiqueta">MATERIAL TRADICIONAL</span>
+                <h2 id="titulo-explorer">Livro Didático - Explorer</h2>
+                <p class="modal-marca">ORBE · B1/B2</p>
+                <hr>
+                <p class="modal-preco"><strong>R$ 99,99</strong> à vista</p>
+                <p class="modal-antigo"><s>R$ 119,99</s> <span>16%</span></p>
+                <p class="modal-descricao">
+                    Uma coleção para alunos que já possuem uma base e estão
+                    prontos para avançar. Desenvolva fluência, amplie o repertório
+                    e estimule a comunicação em situações mais diversas e desafiadoras.
+                </p>
+                <a href="#" class="modal-comprar">Compre ou assine!</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-livro card-express" id="modal-express" aria-labelledby="titulo-express">
+        <button class="modal-fechar" data-fechar aria-label="Fechar">×</button>
+        <div class="modal-corpo">
+            <div class="modal-imagem">
+                <div class="modal-placeholder">Imagem do livro Express</div>
+            </div>
+            <div class="modal-info">
+                <span class="modal-etiqueta">MATERIAL TRADICIONAL</span>
+                <h2 id="titulo-express">Livro Didático - Express</h2>
+                <p class="modal-marca">ORBE · C1/C2</p>
+                <hr>
+                <p class="modal-preco"><strong>R$ 99,99</strong> à vista</p>
+                <p class="modal-antigo"><s>R$ 119,99</s> <span>16%</span></p>
+                <p class="modal-descricao">
+                    Uma coleção para alunos que buscam maior domínio e
+                    naturalidade no inglês. Aprofunde estruturas, vocabulário
+                    e comunicação, trabalhando ideias complexas e diferentes
+                    contextos de uso do idioma.
+                </p>
+                <a href="#" class="modal-comprar">Compre ou assine!</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-livro card-speak" id="modal-speak" aria-labelledby="titulo-speak">
+        <button class="modal-fechar" data-fechar aria-label="Fechar">×</button>
+        <div class="modal-corpo">
+            <div class="modal-imagem">
+                <div class="modal-placeholder">Imagem do livro Speak Up</div>
+            </div>
+            <div class="modal-info">
+                <span class="modal-etiqueta">MATERIAL DE CONVERSAÇÃO</span>
+                <h2 id="titulo-speak">Livro de Conversação - Speak Up</h2>
+                <p class="modal-marca">ORBE · A1/A2</p>
+                <hr>
+                <p class="modal-preco"><strong>R$ 89,99</strong> à vista</p>
+                <p class="modal-antigo"><s>R$ 109,99</s> <span>18%</span></p>
+                <p class="modal-descricao">
+                    Uma coleção para perder o medo de falar desde o início.
+                    Pratique diálogos curtos, perguntas e respostas do dia a dia,
+                    com apoio de imagens, jogos e atividades em dupla.
+                </p>
+                <a href="#" class="modal-comprar">Compre ou assine!</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-livro card-connect" id="modal-connect" aria-labelledby="titulo-connect">
+        <button class="modal-fechar" data-fechar aria-label="Fechar">×</button>
+        <div class="modal-corpo">
+            <div class="modal-imagem">
+                <div class="modal-placeholder">Imagem do livro Connect</div>
+            </div>
+            <div class="modal-info">
+                <span class="modal-etiqueta">MATERIAL DE CONVERSAÇÃO</span>
+                <h2 id="titulo-connect">Livro de Conversação - Connect</h2>
+                <p class="modal-marca">ORBE · B1/B2</p>
+                <hr>
+                <p class="modal-preco"><strong>R$ 89,99</strong> à vista</p>
+                <p class="modal-antigo"><s>R$ 109,99</s> <span>18%</span></p>
+                <p class="modal-descricao">
+                    Uma coleção para quem já se comunica e quer ganhar confiança.
+                    Participe de conversas guiadas, conte experiências e troque
+                    opiniões em situações cada vez mais variadas.
+                </p>
+                <a href="#" class="modal-comprar">Compre ou assine!</a>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="modal-livro card-debate" id="modal-debate" aria-labelledby="titulo-debate">
+        <button class="modal-fechar" data-fechar aria-label="Fechar">×</button>
+        <div class="modal-corpo">
+            <div class="modal-imagem">
+                <div class="modal-placeholder">Imagem do livro Debate</div>
+            </div>
+            <div class="modal-info">
+                <span class="modal-etiqueta">MATERIAL DE CONVERSAÇÃO</span>
+                <h2 id="titulo-debate">Livro de Conversação - Debate</h2>
+                <p class="modal-marca">ORBE · C1/C2</p>
+                <hr>
+                <p class="modal-preco"><strong>R$ 89,99</strong> à vista</p>
+                <p class="modal-antigo"><s>R$ 109,99</s> <span>18%</span></p>
+                <p class="modal-descricao">
+                    Uma coleção para conversar com naturalidade e defender ideias.
+                    Trabalhe argumentação, fluência e expressões do cotidiano
+                    em discussões e apresentações de verdade.
+                </p>
+                <a href="#" class="modal-comprar">Compre ou assine!</a>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- FOOTER ORIGINAL -->
+    <footer class="footer">
+        <span>© 2026 Orbe. Todos os direitos reservados.</span>
+    </footer>
+
+    <script>
+        // MENU MOBILE - HEADER DA HOME
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navbarLinks = document.querySelector('.tentando-colocar-na-direita');
+
+        menuToggle.addEventListener('click', () => {
+            const aberto = navbarLinks.classList.toggle('is-open');
+            menuToggle.setAttribute('aria-expanded', String(aberto));
+        });
+
+        document.querySelectorAll('.navbar-nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                navbarLinks.classList.remove('is-open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // ABRIR MODAIS
+        document.querySelectorAll('[data-abrir]').forEach(botao => {
+            botao.addEventListener('click', () => {
+                const modal = document.getElementById(botao.dataset.abrir);
+
+                if (modal && !modal.open) {
+                    modal.showModal();
+                }
+            });
+        });
+
+        // FECHAR MODAIS
+        document.querySelectorAll('.modal-livro').forEach(modal => {
+            modal.querySelector('[data-fechar]').addEventListener('click', () => {
+                modal.close();
+            });
+
+            modal.addEventListener('click', event => {
+                if (event.target === modal) {
+                    modal.close();
+                }
+            });
+        });
+    </script>
+</body>
+</html>

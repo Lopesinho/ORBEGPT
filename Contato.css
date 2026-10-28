@@ -1,0 +1,532 @@
+/* Página "Contato". Usa as bases do Home.css (fonte, navbar, botão e rodapé). */
+
+[hidden] {
+    display: none !important;
+}
+
+/* ===== Navbar: página atual ===== */
+
+.nav-link-active .nav-link-text {
+    color: #E0B868;
+}
+
+.navbar {
+    margin: 0;
+}
+
+.ct-title {
+    margin: 0 0 40px;
+
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    color: #E3546B;
+}
+
+
+/* ===== 1. Abertura ===== */
+
+.ct-hero {
+    position: relative;
+    overflow: hidden;
+
+    /* começa abaixo da navbar fixa (altura: 12% da tela, mínimo 85px) */
+    padding: calc(max(12vh, 85px) + 60px) 9vw 170px;
+
+    background-color: #E3546B;
+}
+
+.ct-hero-text {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+}
+
+.ct-hero-title {
+    margin: 0;
+
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: white;
+}
+
+.ct-hero-subtitle {
+    margin: 18px 0 0;
+
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+}
+
+/* As esferas lembram o nome "Orbe" */
+
+.ct-orbs {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    z-index: 1;
+}
+
+.ct-orb {
+    position: absolute;
+    border-radius: 50%;
+}
+
+.ct-orb-gold {
+    width: 420px;
+    height: 420px;
+    right: -110px;
+    top: 50%;
+    transform: translateY(-60%);
+    background-color: #E0B868;
+}
+
+.ct-orb-ring {
+    width: 320px;
+    height: 320px;
+    right: 90px;
+    top: 18%;
+    border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.ct-orb-cream {
+    width: 70px;
+    height: 70px;
+    right: 33%;
+    bottom: 22%;
+    background-color: #FFF9F5;
+}
+
+
+/* ===== 2. Dados de contato + formulário ===== */
+
+.ct-main {
+    position: relative;
+    z-index: 2;
+
+    /* sobe um pouco sobre a abertura */
+    margin-top: -110px;
+    padding: 0 9vw 90px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.ct-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ct-info-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 22px 24px;
+
+    background-color: #FFF9F5;
+    border: 1px solid #e99c54;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(90, 69, 64, 0.12);
+}
+
+.ct-info-card h3 {
+    margin: 0 0 4px;
+
+    font-size: 1.15rem;
+    color: #E3546B;
+}
+
+.ct-info-card p {
+    margin: 0;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.ct-info-card a {
+    color: #5A4540;
+    text-decoration: none;
+    border-bottom: 1px solid #E0B868;
+
+    transition: 0.25s ease;
+}
+
+.ct-info-card a:hover {
+    color: #E3546B;
+    border-color: #E3546B;
+}
+
+.ct-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    border-radius: 50%;
+}
+
+.ct-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.ct-icon-pink   { background-color: #E3546B; }
+.ct-icon-gold   { background-color: #E0B868; }
+.ct-icon-orange { background-color: #e99c54; }
+
+
+/* Formulário */
+
+.ct-form-card {
+    padding: 36px 34px;
+
+    background-color: white;
+    border: 1px solid #E0B868;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(90, 69, 64, 0.12);
+}
+
+.ct-form-title {
+    margin: 0;
+
+    font-size: 28px;
+    font-weight: 800;
+    color: #E3546B;
+}
+
+.ct-form-subtitle {
+    margin: 6px 0 24px;
+
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.ct-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.ct-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ct-field label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.ct-field input,
+.ct-field select,
+.ct-field textarea {
+    width: 100%;
+    padding: 11px 14px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5A4540;
+
+    background-color: #FFF9F5;
+    border: 1px solid #E0B868;
+    border-radius: 7px;
+}
+
+.ct-field textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.ct-field input::placeholder,
+.ct-field textarea::placeholder {
+    color: #a08f89;
+}
+
+.ct-field input:focus-visible,
+.ct-field select:focus-visible,
+.ct-field textarea:focus-visible,
+.ct-submit:focus-visible,
+.ct-pill:focus-visible,
+.ct-faq-item summary:focus-visible,
+.ct-info-card a:focus-visible {
+    outline: 1px solid #E3546B;
+    outline-offset: 2px;
+}
+
+.ct-submit {
+    height: 52px;
+    margin-top: 6px;
+    padding: 0 28px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+
+    background-color: #E3546B;
+    border: 2px solid #E3546B;
+    border-radius: 7px;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.ct-submit:hover {
+    background-color: white;
+    color: #E3546B;
+    transform: translateY(-2px);
+}
+
+.ct-submit-light {
+    background-color: #E0B868;
+    border-color: #E0B868;
+}
+
+.ct-submit-light:hover {
+    color: #E3546B;
+    border-color: #E0B868;
+}
+
+/* Mensagem de sucesso */
+
+.ct-success {
+    padding: 30px 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ct-success:focus {
+    outline: none;
+}
+
+.ct-success-orb {
+    width: 84px;
+    height: 84px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+    font-weight: 800;
+    color: white;
+
+    background-color: #E3546B;
+    border: 5px solid #E0B868;
+    border-radius: 50%;
+}
+
+.ct-success h3 {
+    margin: 20px 0 8px;
+
+    font-size: 1.6rem;
+    color: #E3546B;
+}
+
+.ct-success p {
+    max-width: 36ch;
+    margin: 0 0 20px;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+
+/* ===== 3. Perguntas frequentes ===== */
+
+.ct-faq {
+    padding: 90px 9vw;
+    background-color: #FDEEDF;
+}
+
+.ct-faq-list {
+    max-width: 860px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ct-faq-item {
+    background-color: #FFF9F5;
+    border: 1px solid #e99c54;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(90, 69, 64, 0.12);
+}
+
+.ct-faq-item summary {
+    padding: 20px 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #E3546B;
+
+    border-radius: 22px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.ct-faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.ct-faq-item summary::after {
+    content: "+";
+    flex: 0 0 auto;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #E0B868;
+}
+
+.ct-faq-item[open] summary::after {
+    content: "\2212";
+}
+
+.ct-faq-item p {
+    margin: 0;
+    padding: 0 26px 22px;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.65;
+}
+
+
+/* ===== 4. Redes sociais ===== */
+
+.ct-social {
+    padding: 80px 9vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    background-color: #E3546B;
+}
+
+.ct-social-title {
+    margin: 0;
+
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+}
+
+.ct-social-text {
+    margin: 10px 0 30px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.ct-social-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.ct-pill {
+    padding: 14px 26px;
+
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+
+    background-color: #E0B868;
+    border: 1px solid #E0B868;
+    border-radius: 7px;
+
+    transition: 0.3s ease;
+}
+
+.ct-pill:hover {
+    background-color: white;
+    border-color: white;
+    color: #E3546B;
+    transform: translateY(-2px);
+}
+
+
+/* ===== Telas menores ===== */
+
+@media (max-width: 900px) {
+    .ct-hero {
+        padding-bottom: 140px;
+    }
+
+    .ct-hero-title {
+        font-size: 42px;
+    }
+
+    .ct-hero-subtitle {
+        font-size: 18px;
+    }
+
+    .ct-orbs {
+        width: 100%;
+        opacity: 0.3;
+    }
+
+    .ct-main {
+        grid-template-columns: 1fr;
+        margin-top: -90px;
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+
+    .ct-faq,
+    .ct-social {
+        padding-left: 6vw;
+        padding-right: 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-nav {
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .ct-title {
+        font-size: 28px;
+    }
+
+    .ct-form-card {
+        padding: 28px 20px;
+    }
+
+    .ct-info-card {
+        padding: 18px;
+    }
+}

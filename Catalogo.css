@@ -1,0 +1,1064 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* ==========================================
+   ORBE - CATÁLOGO
+   DESIGN EQUILIBRADO
+========================================== */
+
+:root {
+    --rosa: #e3546b;
+    --dourado: #e0b868;
+    --texto: #28232b;
+    --cinza: #777078;
+    --fundo: #fffdfb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body {
+    background: var(--fundo);
+    color: var(--texto);
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ==========================================
+   HEADER ORIGINAL
+========================================== */
+
+
+/* ==========================================
+   HEADER ORBE - IGUAL AO DA HOME
+========================================== */
+
+.container-fluid {
+    height: 12%;
+    min-height: 85px;
+    width: 100%;
+
+    background-color: rgba(227, 84, 107, 0.82);
+
+    padding: 0 9vw;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-brand {
+    height: 75px;
+    width: 110px;
+    margin: 0;
+    object-fit: contain;
+}
+
+.tentando-colocar-na-direita {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 45px;
+    white-space: nowrap;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link-text {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+    transition: 0.25s ease;
+}
+
+.nav-link-text:hover {
+    color: #E0B868;
+    transform: translateY(-1px);
+}
+
+/* Espaço para a navbar fixa */
+.catalogo {
+    padding-top: 100px;
+}
+
+/* ==========================================
+   HEADER RESPONSIVO
+========================================== */
+
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .container-fluid {
+        min-height: 75px;
+        height: 75px;
+        padding: 0 5%;
+    }
+
+    .navbar-brand {
+        width: 100px;
+        height: 65px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 24px;
+        height: 2px;
+        background: white;
+        border-radius: 3px;
+    }
+
+    .tentando-colocar-na-direita {
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+
+        display: none;
+        background-color: rgba(227, 84, 107, 0.98);
+        padding: 15px 5% 25px;
+    }
+
+    .tentando-colocar-na-direita.is-open {
+        display: flex;
+    }
+
+    .navbar-nav {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 12px 0;
+    }
+
+    .catalogo {
+        padding-top: 85px;
+    }
+}
+
+
+/* ==========================================
+   CONTEÚDO GERAL
+========================================== */
+
+.catalogo {
+    width: min(1200px, 90%);
+    margin: 0 auto;
+    padding: 0 0 100px;
+}
+
+/* ==========================================
+   INTRODUÇÃO SIMPLES
+========================================== */
+
+.catalogo-intro {
+    padding: 85px 0 65px;
+    text-align: center;
+}
+
+.intro-etiqueta {
+    display: inline-block;
+    color: var(--rosa);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.catalogo-intro h1 {
+    max-width: 750px;
+    margin: 16px auto 0;
+    font-size: clamp(31px, 4vw, 49px);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -1.3px;
+}
+
+.catalogo-intro h1 span {
+    color: var(--rosa);
+}
+
+.catalogo-intro p {
+    max-width: 570px;
+    margin: 18px auto 0;
+    color: var(--cinza);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   SEÇÕES
+========================================== */
+
+.catalogo-secao {
+    margin-bottom: 90px;
+}
+
+.catalogo-secao:last-child {
+    margin-bottom: 0;
+}
+
+.secao-cabecalho {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.secao-numero {
+    color: var(--rosa);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.secao-cabecalho h2 {
+    margin-top: 30px;
+    color: var(--texto);
+    font-size: clamp(25px, 3vw, 34px);
+    font-weight: 700;
+    letter-spacing: -.7px;
+}
+
+.secao-cabecalho p {
+    margin-top: 7px;
+    color: var(--cinza);
+    font-size: 13px;
+}
+
+.secao-contador {
+    padding-bottom: 5px;
+    color: #a39ba0;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* ==========================================
+   GRID DOS CARDS
+========================================== */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* ==========================================
+   CORES DAS COLEÇÕES
+========================================== */
+
+.card-rise {
+    --cor: #e3546b;
+    --clara: #f5cbd3;
+    --suave: #fff0f2;
+}
+
+.card-explorer {
+    --cor: #29abe2;
+    --clara: #b9e6f7;
+    --suave: #effaff;
+}
+
+.card-express {
+    --cor: #7b579b;
+    --clara: #dcc9ed;
+    --suave: #f6f0fa;
+}
+
+.card-speak {
+    --cor: #dd7a2c;
+    --clara: #f4d4b6;
+    --suave: #fff5eb;
+}
+
+.card-connect {
+    --cor: #1f9d93;
+    --clara: #bce6df;
+    --suave: #effaf8;
+}
+
+.card-debate {
+    --cor: #4f9d45;
+    --clara: #cce6c6;
+    --suave: #f1f9ef;
+}
+
+/* ==========================================
+   CARD - ESTRUTURA DO REDESIGN
+========================================== */
+
+.card-colecao {
+    min-width: 0;
+    min-height: 465px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    background: #ffffff;
+    border: 1px solid #eee8e7;
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(60, 35, 50, .055);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.card-colecao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 28px rgba(60, 35, 50, .11);
+}
+
+/* ==========================================
+   PARTE SUPERIOR COLORIDA
+========================================== */
+
+.card-topo {
+    position: relative;
+    height: 185px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--suave);
+    border-bottom: 1px solid var(--clara);
+}
+
+.card-indice {
+    position: absolute;
+    top: 19px;
+    left: 22px;
+
+    color: var(--cor);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card-nivel {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+
+    padding: 7px 13px;
+    border-radius: 9px;
+
+    background: #ffffff;
+    color: var(--cor);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* ==========================================
+   CÍRCULOS ORIGINAIS
+========================================== */
+
+.card-circulo {
+    width: 105px;
+    height: 105px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--clara);
+
+    transition: transform .3s ease;
+}
+
+.card-colecao:hover .card-circulo {
+    transform: scale(1.05);
+}
+
+.card-simbolo {
+    color: var(--cor);
+    font-size: 50px;
+    line-height: 1;
+}
+
+.card-circulo img {
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+}
+
+.card-circulo svg {
+    width: 47px;
+    height: 47px;
+    color: var(--cor);
+}
+
+/* ==========================================
+   CONTEÚDO DOS CARDS
+========================================== */
+
+.card-corpo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px 24px;
+}
+
+.card-corpo h3 {
+    color: var(--cor);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -.5px;
+}
+
+.card-corpo > p {
+    margin-top: 11px;
+    color: #625d63;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   RODAPÉ DOS CARDS
+========================================== */
+
+.card-rodape {
+    margin-top: auto;
+    padding-top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+}
+
+.card-disponibilidade {
+    color: #928a90;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   BOTÃO SIMPLES
+========================================== */
+
+.card-botao {
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border: 1px solid var(--cor);
+    border-radius: 9px;
+
+    background: var(--cor);
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition:
+        background .25s,
+        color .25s;
+}
+
+.card-botao span {
+    font-size: 19px;
+    line-height: 1;
+}
+
+.card-botao:hover {
+    background: #ffffff;
+    color: var(--cor);
+}
+
+/* ==========================================
+   MODAIS
+========================================== */
+
+.modal-livro {
+    position: fixed;
+    width: min(980px, 92vw);
+    max-height: 90vh;
+    margin: auto;
+    padding: 0;
+
+    overflow: auto;
+    border: 2px solid var(--cor);
+    border-radius: 15px;
+
+    background: #ffffff;
+    color: var(--texto);
+
+    box-shadow: 0 18px 55px rgba(0, 0, 0, .2);
+}
+
+.modal-livro::backdrop {
+    background: rgba(25, 20, 30, .45);
+    backdrop-filter: blur(3px);
+}
+
+.modal-fechar {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    z-index: 10;
+
+    width: 40px;
+    height: 40px;
+
+    border: 0;
+    background: transparent;
+    color: #555555;
+
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.modal-fechar:hover {
+    color: var(--cor);
+}
+
+.modal-corpo {
+    min-height: 510px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+}
+
+.modal-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px 30px;
+    background: var(--suave);
+}
+
+.modal-imagem img {
+    display: block;
+    width: 100%;
+    max-width: 290px;
+    max-height: 410px;
+    object-fit: contain;
+
+    filter: drop-shadow(
+        8px 12px 8px rgba(0, 0, 0, .13)
+    );
+}
+
+.modal-placeholder {
+    width: 260px;
+    max-width: 100%;
+    height: 340px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    border: 2px dashed var(--clara);
+    border-radius: 10px;
+
+    background: #ffffff;
+    color: var(--cor);
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ==========================================
+   INFORMAÇÕES DOS MODAIS
+========================================== */
+
+.modal-info {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 65px 45px 45px;
+}
+
+.modal-etiqueta {
+    color: var(--cor);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.modal-info h2 {
+    margin-top: 13px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.modal-marca {
+    margin-top: 9px;
+    color: #9a9199;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.modal-info hr {
+    width: 100%;
+    height: 1px;
+    margin: 22px 0;
+    border: 0;
+    background: #e9e3e3;
+}
+
+/* ==========================================
+   PREÇOS
+========================================== */
+
+.modal-preco {
+    color: #333333;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.modal-preco strong {
+    margin-right: 8px;
+    color: var(--cor);
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.modal-antigo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+
+    color: #aaa3aa;
+    font-size: 15px;
+}
+
+.modal-antigo span {
+    padding: 5px 9px;
+    border-radius: 7px;
+
+    background: var(--suave);
+    color: var(--cor);
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.modal-descricao {
+    margin-top: 28px;
+    color: #625d63;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+/* ==========================================
+   BOTÃO DOS MODAIS
+========================================== */
+
+.modal-comprar {
+    width: 100%;
+    min-height: 44px;
+    margin-top: auto;
+    padding: 12px 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+    background: var(--cor);
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        transform .25s,
+        filter .25s;
+}
+
+.modal-comprar:hover {
+    transform: translateY(-2px);
+    filter: brightness(.92);
+}
+
+/* ==========================================
+   FOOTER ORIGINAL
+========================================== */
+
+.footer {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--dourado);
+    color: #ffffff;
+
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* ==========================================
+   RESPONSIVIDADE - NOTEBOOK
+========================================== */
+
+@media (max-width: 1050px) {
+
+    .navbar {
+        width: 90%;
+    }
+
+    .cards-grid {
+        gap: 18px;
+    }
+
+    .card-corpo {
+        padding: 22px 19px;
+    }
+
+    .card-corpo h3 {
+        font-size: 23px;
+    }
+
+    .modal-info {
+        padding: 55px 30px 35px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE - TABLET
+========================================== */
+
+@media (max-width: 850px) {
+
+    .navbar-links {
+        gap: 23px;
+    }
+
+    .navbar-links a {
+        font-size: 13px;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 22px;
+    }
+
+    .modal-corpo {
+        grid-template-columns: 42% 58%;
+    }
+
+    .modal-imagem {
+        padding: 25px;
+    }
+
+    .modal-info {
+        padding: 50px 25px 30px;
+    }
+}
+
+/* ==========================================
+   RESPONSIVIDADE - MOBILE
+========================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 78px;
+    }
+
+    .navbar-logo img {
+        width: 100px;
+        height: 68px;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        width: 24px;
+        height: 2px;
+        border-radius: 3px;
+        background: #ffffff;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 78px;
+        left: 0;
+        right: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+
+        padding: 15px 5% 25px;
+        background: var(--rosa);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, .08);
+    }
+
+    .navbar-links.is-open {
+        display: flex;
+    }
+
+    .navbar-links a {
+        padding: 12px 5px;
+        font-size: 14px;
+    }
+
+    .catalogo {
+        padding-bottom: 65px;
+    }
+
+    .catalogo-intro {
+        padding: 60px 0 55px;
+    }
+
+    .catalogo-intro h1 {
+        font-size: 32px;
+        letter-spacing: -.7px;
+    }
+
+    .catalogo-intro p {
+        font-size: 12px;
+    }
+
+    .catalogo-secao {
+        margin-bottom: 65px;
+    }
+
+    .secao-cabecalho {
+        margin-bottom: 23px;
+    }
+
+    .secao-cabecalho h2 {
+        font-size: 25px;
+    }
+
+    .secao-cabecalho p {
+        font-size: 12px;
+    }
+
+    .secao-contador {
+        display: none;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .card-colecao {
+        width: 100%;
+        max-width: 440px;
+        min-height: 450px;
+        margin: 0 auto;
+    }
+
+    .card-corpo {
+        padding: 24px;
+    }
+
+    .card-corpo h3 {
+        font-size: 26px;
+    }
+
+    .modal-livro {
+        width: 94vw;
+        max-height: 90vh;
+    }
+
+    .modal-corpo {
+        grid-template-columns: 1fr;
+    }
+
+    .modal-imagem {
+        min-height: 260px;
+        padding: 40px 25px 25px;
+    }
+
+    .modal-imagem img {
+        max-width: 190px;
+        max-height: 250px;
+    }
+
+    .modal-placeholder {
+        width: 190px;
+        height: 240px;
+    }
+
+    .modal-info {
+        padding: 30px 25px 35px;
+    }
+
+    .modal-info h2 {
+        font-size: 23px;
+    }
+
+    .modal-preco strong {
+        font-size: 30px;
+    }
+
+    .modal-comprar {
+        margin-top: 30px;
+    }
+}
+
+/* ==========================================
+   TELAS MENORES
+========================================== */
+
+@media (max-width: 380px) {
+
+    .catalogo-intro h1 {
+        font-size: 28px;
+    }
+
+    .secao-cabecalho h2 {
+        font-size: 23px;
+    }
+
+    .card-corpo {
+        padding: 21px;
+    }
+
+    .card-corpo > p {
+        font-size: 11px;
+    }
+}
+
+/* ==========================================
+   ACESSIBILIDADE
+========================================== */
+
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid var(--dourado);
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        transition-duration: .01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* ==========================================
+   CORREÇÃO DO HEADER - ORBE
+========================================== */
+
+/* Mantém o header visível sem sobrepor o conteúdo */
+.container-fluid {
+    position: sticky;
+    top: 0;
+    left: auto;
+    height: 115px;
+    min-height: 115px;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Evita que a navbar acrescente espaçamentos */
+.navbar {
+    padding: 0;
+    margin: 0;
+}
+
+/* Remove o espaço que adicionamos para o header fixo */
+.catalogo {
+    padding-top: 0;
+}
+
+/* Ajusta a versão mobile */
+@media (max-width: 768px) {
+    .container-fluid {
+        height: 75px;
+        min-height: 75px;
+    }
+
+    .catalogo {
+        padding-top: 0;
+    }
+}
